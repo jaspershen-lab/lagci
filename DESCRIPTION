@@ -1,4 +1,4 @@
-Package: laggedcor
+Package: lagci
 Title: Calculate the lagged correlation between two time-series data (wearable and omics data)
 Version: 0.99.5
 Authors@R: c(
@@ -8,7 +8,7 @@ Authors@R: c(
            email = "shenxt1990@outlook.com",
            comment = c(ORCID = "0000-0002-9608-9964"))
            )
-Description: laggedcor is package which used for time-series data analysis in
+Description: lagci is package which used for time-series data analysis in
              wearable and omics field.
              It is used to calculate the lagged correlation between two 
              time-series data (wearable and omics data). 
