@@ -29,6 +29,6 @@ a \code{shift_time} attribute that contains the corresponding shift times. This 
 the process of identifying the point in time with the highest correlation coefficient.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 extract_max_cor(object = object)
 }

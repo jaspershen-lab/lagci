@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 
 ## **Data preparation**
 
-`laggedcor` needs two time-series data and their corresponding time.
+`lagci` needs two time-series data and their corresponding time.
 
 * x: time-series 1. numeric vector.
 
@@ -39,12 +39,12 @@ knitr::opts_chunk$set(
 
 * time2: time for y.
 
-The demo data can be from `laggedcor`.
+The demo data can be from `lagci`.
 
 ```{r,eval=TRUE,warning=FALSE, R.options="", message=FALSE, cache=TRUE}
-library(laggedcor)
-data("step_data", package = "laggedcor")
-data("heart_data", package = "laggedcor")
+library(lagci)
+data("step_data", package = "lagci")
+data("heart_data", package = "lagci")
 
 head(step_data)
 head(heart_data)

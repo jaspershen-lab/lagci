@@ -34,7 +34,7 @@
 #' @export
 #' 
 #' @examples 
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' result = 
 #'   evaluate_lagged_cor(object = object, plot = TRUE)
 #' 

@@ -53,7 +53,7 @@ This function assumes that 'base_theme' is a ggplot2 theme object defined elsewh
 Adjust the 'sun_rise_time' and 'sun_set_time' to match the local times for sunrise and sunset.
 }
 \examples{
-data("step_data", package = "laggedcor")
+data("step_data", package = "lagci")
 
 x = step_data$step
 time = step_data$time

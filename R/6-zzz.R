@@ -6,11 +6,11 @@
     return()
   
   crayon::num_colors(TRUE)
-  laggedcor_attach()
+  lagci_attach()
   
   if (!"package:conflicted" %in% search()) {
-    x <- laggedcor_conflicts()
-    msg(laggedcor_conflict_message(x), startup = TRUE)
+    x <- lagci_conflicts()
+    msg(lagci_conflict_message(x), startup = TRUE)
   }
   
 }

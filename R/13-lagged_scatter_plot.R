@@ -34,7 +34,7 @@
 #' \email{shenxt1990@@outlook.com}
 #' @export
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' lagged_scatter_plot(
 #'   object = object,
 #'   x_name = "Step",

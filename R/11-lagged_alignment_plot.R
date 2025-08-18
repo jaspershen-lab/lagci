@@ -29,7 +29,7 @@
 #' @author Xiaotao Shen
 #' \email{shenxt1990@@outlook.com}
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #'
 #' lagged_alignment_plot(object = object,
 #'                       x_limit = c(1, 1000))

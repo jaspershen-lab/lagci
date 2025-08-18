@@ -52,7 +52,7 @@ to ensure these slots are present in the object passed to the function. Also,
 the function assumes that \code{base_theme} is defined elsewhere in the user's environment.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 lagged_scatter_plot(
   object = object,
   x_name = "Step",

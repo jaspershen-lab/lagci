@@ -26,7 +26,7 @@
 #' \email{shenxt1990@@outlook.com}
 #' @export
 #' @examples
-#' data("step_data", package = "laggedcor")
+#' data("step_data", package = "lagci")
 #'
 #' x = step_data$step
 #' time = step_data$time

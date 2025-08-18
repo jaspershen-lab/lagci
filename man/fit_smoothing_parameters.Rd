@@ -38,7 +38,7 @@ by testing different combinations of span and degree values and selecting the be
 parameters based on the R² value.
 }
 \examples{
-data("step_data", package = "laggedcor")
+data("step_data", package = "lagci")
 best_params <- fit_smoothing_parameters(x = step_data$step,
                                         time = step_data$time)
 best_params

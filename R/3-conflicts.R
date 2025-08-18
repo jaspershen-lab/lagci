@@ -1,38 +1,38 @@
-#' Conflicts between the laggedcor and other packages
+#' Conflicts between the lagci and other packages
 #'
-#' This function lists all the conflicts between packages in the laggedcor
+#' This function lists all the conflicts between packages in the lagci
 #' and other packages that you have loaded.
 #'
 #' There are four conflicts that are deliberately ignored: \code{intersect},
 #' \code{union}, \code{setequal}, and \code{setdiff} from dplyr. These functions
 #' make the base equivalents generic, so shouldn't negatively affect any
 #' existing code.
-#' @return laggedcor conflicts
+#' @return lagci conflicts
 #' @export
 #' @examples
-#' laggedcor_conflicts()
-laggedcor_conflicts <- function() {
+#' lagci_conflicts()
+lagci_conflicts <- function() {
   envs <- grep("^package:", search(), value = TRUE)
   envs <- purrr::set_names(envs)
   objs <- invert(lapply(envs, ls_env))
   
   conflicts <- purrr::keep(objs, ~ length(.x) > 1)
   
-  tidy_names <- paste0("package:", laggedcor_packages())
+  tidy_names <- paste0("package:", lagci_packages())
   conflicts <- purrr::keep(conflicts, ~ any(.x %in% tidy_names))
   
   conflict_funs <- purrr::imap(conflicts, confirm_conflict)
   conflict_funs <- purrr::compact(conflict_funs)
   
-  structure(conflict_funs, class = "laggedcor_conflicts")
+  structure(conflict_funs, class = "lagci_conflicts")
 }
 
-laggedcor_conflict_message <- function(x) {
+lagci_conflict_message <- function(x) {
   if (length(x) == 0) return("")
   
   header <- cli::rule(
     left = crayon::bold("Conflicts"),
-    right = "laggedcor_conflicts()"
+    right = "lagci_conflicts()"
   )
   
   pkgs <- x %>% purrr::map(~ gsub("^package:", "", .))
@@ -54,8 +54,8 @@ laggedcor_conflict_message <- function(x) {
 }
 
 #' @export
-print.laggedcor_conflicts <- function(x, ..., startup = FALSE) {
-  cli::cat_line(laggedcor_conflict_message(x))
+print.lagci_conflicts <- function(x, ..., startup = FALSE) {
+  cli::cat_line(lagci_conflict_message(x))
 }
 
 #' @importFrom magrittr %>%

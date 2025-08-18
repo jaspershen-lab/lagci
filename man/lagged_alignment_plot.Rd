@@ -63,7 +63,7 @@ matched indices to provide average values, or it can highlight exact matches. Op
 or points enhance the visual representation of alignment.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 
 lagged_alignment_plot(object = object,
                       x_limit = c(1, 1000))

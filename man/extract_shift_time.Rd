@@ -35,7 +35,7 @@ The \code{object} is expected to have an accessible \code{shift_time} attribute.
 the \code{stringr} package for string manipulation.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 extract_shift_time(object = object, numeric = TRUE)
 extract_shift_time(object = object, numeric = FALSE)
 }

@@ -15,7 +15,7 @@
 #' @return A list containing the original and smoothed data, as well as the span values used.
 #'
 #' @examples
-#' data("step_data", package = "laggedcor")
+#' data("step_data", package = "lagci")
 #' x <- step_data$step
 #' time <- step_data$time
 #' span <- 0.1

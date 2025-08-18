@@ -3,7 +3,7 @@ core <-
     "ggplot2"
   )
 
-laggedcor_core_unloaded <- function() {
+lagci_core_unloaded <- function() {
   search <- paste0("package:", core)
   core[!search %in% search()]
 }
@@ -22,19 +22,19 @@ same_library <- function(pkg) {
           ))
 }
 
-laggedcor_attach <- function() {
-  to_load <- laggedcor_core_unloaded()
+lagci_attach <- function() {
+  to_load <- lagci_core_unloaded()
   if (length(to_load) == 0)
     return(invisible())
   
   msg(cli::rule(
     left = crayon::bold("Attaching packages"),
-    right = paste0("laggedcor ", laggedcor_package_version("laggedcor"))
+    right = paste0("lagci ", lagci_package_version("lagci"))
   ),
   startup = TRUE)
   
   versions <-
-    vapply(to_load, laggedcor_package_version, character(1))
+    vapply(to_load, lagci_package_version, character(1))
   packages <- paste0(
     crayon::green(cli::symbol$tick),
     " ",
@@ -56,7 +56,7 @@ laggedcor_attach <- function() {
   invisible()
 }
 
-laggedcor_package_version <- function(x) {
+lagci_package_version <- function(x) {
   version <- as.character(unclass(utils::packageVersion(x))[[1]])
   
   if (length(version) > 3) {

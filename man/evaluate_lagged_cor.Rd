@@ -42,7 +42,7 @@ This function depends on several external packages (\code{ggplot2}, \code{dplyr}
 well as a custom \code{fitpeaks} function that must be defined elsewhere in the user's environment.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 result = 
   evaluate_lagged_cor(object = object, plot = TRUE)
 

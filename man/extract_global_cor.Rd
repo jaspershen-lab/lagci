@@ -30,7 +30,7 @@ and \code{which_global_idx} that points to a valid index within them. The purpos
 should be documented elsewhere, detailing why this particular index is significant.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 extract_global_cor(object = object)
 }
 \author{

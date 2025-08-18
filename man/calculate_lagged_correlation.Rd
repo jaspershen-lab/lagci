@@ -69,8 +69,8 @@ a tolerance window. Parallel processing is implemented to improve performance
 for large datasets.
 }
 \examples{
-data("heart_data", package = "laggedcor")
-data("step_data", package = "laggedcor")
+data("heart_data", package = "lagci")
+data("step_data", package = "lagci")
 
 dim(heart_data)
 dim(step_data)

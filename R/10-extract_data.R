@@ -25,7 +25,7 @@
 #' the `stringr` package for string manipulation.
 #' @export
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' extract_shift_time(object = object, numeric = TRUE)
 #' extract_shift_time(object = object, numeric = FALSE)
 
@@ -87,7 +87,7 @@ extract_shift_time =
 #' @author Xiaotao Shen
 #' \email{shenxt1990@@outlook.com}
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' extract_all_cor(object = object)
 
 extract_all_cor =
@@ -129,7 +129,7 @@ extract_all_cor =
 #' @export
 #'
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' extract_all_cor_p(object = object)
 
 extract_all_cor_p =
@@ -168,7 +168,7 @@ extract_all_cor_p =
 #' @export
 #'
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' extract_max_cor(object = object)
 
 extract_max_cor =
@@ -208,7 +208,7 @@ extract_max_cor =
 #' @author Xiaotao Shen
 #' \email{shenxt1990@@outlook.com}
 #' @examples
-#' data("object", package = "laggedcor")
+#' data("object", package = "lagci")
 #' extract_global_cor(object = object)
 
 extract_global_cor <-

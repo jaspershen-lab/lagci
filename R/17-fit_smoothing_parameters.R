@@ -15,7 +15,7 @@
 #' @return A list of the best span and degree parameters for the LOESS data smoothing method.
 #'
 #' @examples
-#' data("step_data", package = "laggedcor")
+#' data("step_data", package = "lagci")
 #' best_params <- fit_smoothing_parameters(x = step_data$step,
 #'                                         time = step_data$time)
 #' best_params

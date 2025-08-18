@@ -33,8 +33,8 @@
 #' @export
 #' @author Xiaotao Shen \email{shenxt1990@stanford.edu}
 #' @examples
-#' data("heart_data", package = "laggedcor")
-#' data("step_data", package = "laggedcor")
+#' data("heart_data", package = "lagci")
+#' data("step_data", package = "lagci")
 #'
 #' dim(heart_data)
 #' dim(step_data)
@@ -224,7 +224,7 @@
 #     parameter <-
 #       new(
 #         Class = "tidymass_parameter",
-#         pacakge_name = "laggedcor",
+#         pacakge_name = "lagci",
 #         function_name = "calculate_lagged_correlation",
 #         parameter = list(
 #           time_tol = time_tol,
@@ -352,7 +352,7 @@ calculate_lagged_correlation <-
     parameter <-
       new(
         Class = "tidymass_parameter",
-        pacakge_name = "laggedcor",
+        pacakge_name = "lagci",
         function_name = "calculate_lagged_correlation",
         parameter = list(
           time_tol = time_tol,

@@ -1,6 +1,6 @@
 msg <- function(..., startup = FALSE) {
   if (startup) {
-    if (!isTRUE(getOption("laggedcor.quiet"))) {
+    if (!isTRUE(getOption("lagci.quiet"))) {
       packageStartupMessage(text_col(...))
     }
   } else {
@@ -27,22 +27,22 @@ text_col <- function(x) {
 
 }
 
-#' List all packages in the laggedcor
+#' List all packages in the lagci
 #'
-#' @param include_self Include laggedcor in the list?
+#' @param include_self Include lagci in the list?
 #' @export
-#' @return laggedcor packages
+#' @return lagci packages
 #' @examples
-#' laggedcor_packages()
-laggedcor_packages <- function(include_self = TRUE) {
-  raw <- utils::packageDescription("laggedcor")$Imports
+#' lagci_packages()
+lagci_packages <- function(include_self = TRUE) {
+  raw <- utils::packageDescription("lagci")$Imports
   imports <- strsplit(raw, ",")[[1]]
   parsed <- gsub("^\\s+|\\s+$", "", imports)
   names <-
     vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))
 
   if (include_self) {
-    names <- c(names, "laggedcor")
+    names <- c(names, "lagci")
   }
 
   names

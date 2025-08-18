@@ -30,7 +30,7 @@ function is useful for subsequent analysis where the relationship between correl
 coefficients and their corresponding shift times is needed.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 extract_all_cor(object = object)
 }
 \author{

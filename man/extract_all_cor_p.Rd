@@ -30,6 +30,6 @@ function is crucial for analyses where the significance of the correlation coeff
 needs to be assessed in relation to their shift times.
 }
 \examples{
-data("object", package = "laggedcor")
+data("object", package = "lagci")
 extract_all_cor_p(object = object)
 }
