@@ -29,20 +29,20 @@ lagci_logo <-
   function(unicode = l10n_info()$`UTF-8`) {
   message(crayon::green("Thank you for using lagci!"))
   message(crayon::green("Version", lagci_version, "(", lagci_update_date, ")"))
-  message(crayon::green("More information: searching 'jaspershen lagci'."))
+  message(crayon::green("More information: searching 'jaspershen-lab/lagci'."))
   message(crayon::yellow("I'M USING THE DEVELOPER VERSION OF lagci"))
-  
-  logo =
-    c(
-      "  _                            _  _____           ",
-      " | |                          | |/ ____|          ",
-      " | | __ _  __ _  __ _  ___  __| | |     ___  _ __ ",
-      " | |/ _` |/ _` |/ _` |/ _ \\/ _` | |    / _ \\| '__|",
-      " | | (_| | (_| | (_| |  __/ (_| | |___| (_) | |   ",
-      " |_|\\__,_|\\__, |\\__, |\\___|\\__,_|\\_____\\___/|_|   ",
-      "           __/ | __/ |                            ",
-      "          |___/ |___/                             "
+    
+    logo <- c(
+      " _                  _ ",
+      "| |                (_)",
+      "| | __ _  __ _  ___ _ ",
+      "| |/ _` |/ _` |/ __| |",
+      "| | (_| | (_| | (__| |",
+      "|_|\\__,_|\\__, |\\___|_|",
+      "          __/ |       ",
+      "         |___/        "
     )
+    
   
   
   hexa <- c("*", ".", "o", "*", ".", "*", ".", "o", ".", "*")
