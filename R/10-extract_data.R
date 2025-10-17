@@ -178,7 +178,7 @@ extract_max_cor =
     
     all_cor = object@all_cor
     names(all_cor) = shift_time
-    all_cor[which.max(all_cor)]
+    all_cor[which.max(abs(all_cor))]
   }
 
 
