@@ -2,7 +2,7 @@
 
 <img src="man/figures/lagCI_logo.svg" align="right" alt="" width="120" />
 
-# `lagCI`: lagged correlation inference
+# `lagCI`: Lagged-Correlation Based Causal Inference
 
 [![](https://www.r-pkg.org/badges/version/lagci?color=green)](https://cran.r-project.org/package=lagci)
 [![](https://img.shields.io/github/languages/code-size/jaspershen-lab/lagci.svg)](https://github.com/jaspershen-lab/lagci)
