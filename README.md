@@ -1,55 +1,54 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `laggedcor`: lagged corrrelation <img src="man/figures/laggedcor_logo.png" align="right" alt="" width="120" />
+# `lagCI`: lagged correlation inference <img src="man/figures/lagCI_logo.svg" align="right" alt="" width="120" />
 
-[![](https://www.r-pkg.org/badges/version/laggedcor?color=green)](https://cran.r-project.org/package=laggedcor)
-[![](https://img.shields.io/github/languages/code-size/laggedcor/laggedcor.svg)](https://github.com/laggedcor/laggedcor)
-[![Dependencies](https://tinyverse.netlify.com/badge/laggedcor)](https://cran.r-project.org/package=laggedcor)
+[![](https://www.r-pkg.org/badges/version/lagci?color=green)](https://cran.r-project.org/package=lagci)
+[![](https://img.shields.io/github/languages/code-size/jaspershen-lab/lagci.svg)](https://github.com/jaspershen-lab/lagci)
+[![Dependencies](https://tinyverse.netlify.com/badge/lagci)](https://cran.r-project.org/package=lagci)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/jaspershen-lab/laggedcor)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/jaspershen-lab/lagci)
 ---
 
-`laggedcor` is a part of [tidywearable](https://tidywearable.github.io/).
+`lagCI` is a part of [tidywearable](https://tidywearable.github.io/).
 
 ## **About**
 
 ---
 
-The `laggedcor` is an R package used to calculate the lagged correlation for omics and wearable data.
+`lagCI` is an R package for calculating the lagged correlation between time-series data, with a focus on wearable and omics data integration.
 
 ## **Installation**
 
 ---
 
-You can install `laggedcor` from
-[GitHub](https://github.com/jaspershen-lab/laggedcor).
+You can install `lagCI` from
+[GitHub](https://github.com/jaspershen-lab/lagci).
 
 ``` r
 if(!require(devtools)){
 install.packages("devtools")
 }
-devtools::install_github("jaspershen-lab/laggedcor")
+devtools::install_github("jaspershen-lab/lagci")
 ```
 
-Then you can use `laggedcor_install()` to install all the packages in
-`laggedcor`.
+Then load the package with:
 
 ``` r
-library(laggedcor)
+library(lagci)
 ```
 
 ## **Usage**
 
 ---
 
-Now, `laggedcor` contains 8 packages, which are listed below:
+`lagCI` provides tools for time-series lagged correlation analysis between wearable and omics data.
 
 ## **Need help?**
 
 ---
 
-If you have any questions about `laggedcor`, please don’t hesitate to
-email me (<shenxt@stanford.edu>) or reach out me via the social medias below.
+If you have any questions about `lagCI`, please don't hesitate to
+email me (<shenxt@stanford.edu>) or reach out via the social media below.
 
 <i class="fa fa-weixin"></i>  [shenxt1990](https://www.shenxt.info/files/wechat_QR.jpg)
 
@@ -65,7 +64,7 @@ Palo Alto, CA
 
 ---
 
-If you use `laggedcor` in you publications, please cite this publication:
+If you use `lagCI` in your publications, please cite this publication:
 
 X. Shen, R. Wang, X. Xiong, Y. Yin, Y. Cai, Z. Ma, N. Liu, and Z.-J.
 Zhu\* (Corresponding Author), Metabolic Reaction Network-based Recursive
