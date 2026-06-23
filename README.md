@@ -1,10 +1,11 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `lagCI`: lagged correlation inference <img src="man/figures/lagCI_logo.svg" align="right" alt="" width="120" />
+<img src="man/figures/lagCI_logo.svg" align="right" alt="" width="120" />
+
+# `lagCI`: lagged correlation inference
 
 [![](https://www.r-pkg.org/badges/version/lagci?color=green)](https://cran.r-project.org/package=lagci)
 [![](https://img.shields.io/github/languages/code-size/jaspershen-lab/lagci.svg)](https://github.com/jaspershen-lab/lagci)
-[![Dependencies](https://tinyverse.netlify.com/badge/lagci)](https://cran.r-project.org/package=lagci)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/jaspershen-lab/lagci)
 ---
@@ -64,12 +65,11 @@ Palo Alto, CA
 
 ---
 
-If you use `lagCI` in your publications, please cite this publication:
+If you use `lagCI` in your publications, please cite this preprint:
 
-X. Shen, R. Wang, X. Xiong, Y. Yin, Y. Cai, Z. Ma, N. Liu, and Z.-J.
-Zhu\* (Corresponding Author), Metabolic Reaction Network-based Recursive
-Metabolite Annotation for Untargeted Metabolomics, Nature
-Communications, 2019, 10: 1516.  
-[Web Link](https://www.nature.com/articles/s41467-019-09550-x).
+Yifei Ge, Shunpeng Bai, Zirui Qiang, Yijiang Liu, Yitong Wu, Xiaotao Shen,
+LagCI Enables Inference of Temporal Causal Relationships from Dense
+Multi-Omic Time Series, *bioRxiv* 2026.04.15.718654.  
+[doi: https://doi.org/10.64898/2026.04.15.718654](https://doi.org/10.64898/2026.04.15.718654).
 
 Thank you very much!
